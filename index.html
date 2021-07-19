@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PrintDoc</title>
+<style>
+	@media print {
+		@page {
+			size: A4;
+			margin: 1in;
+			
+		}
+	}	
+	img {width: 7in;}
+</style>
+<script>
+	function init(){
+		window.print();
+	}
+</script>
+</head>
+
+<body onload="init();">
+	<img src="FloorPlan.png" />
+</body>
+</html>
